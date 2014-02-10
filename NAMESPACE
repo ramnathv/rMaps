@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+")
+import(rCharts)
+import(lattice)
+import(RColorBrewer)
+import(plyr)
+import(yaml)
+import(whisker)
+import(RJSONIO)

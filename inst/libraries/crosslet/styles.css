@@ -1,0 +1,38 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+#content{
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+
+  //width: 1324px;
+}
+
+#map{
+  
+  height: 100%;
+}
+
+#templates{
+  display: none;
+}
+
+.crosslet, .crosslet * {
+  font-family: "Open Sans";
+}
+.crosslet_panel .legendForm input[type="text"] {
+  padding-right: 4px !important;
+  height: 16px !important;
+}
+.crosslet svg .hover text {
+  background: black !important;
+  color: white !important;
+}
+ 

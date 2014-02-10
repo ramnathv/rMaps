@@ -1,0 +1,23 @@
+Package: rMaps
+Type: Package
+Title: Interactive Maps from R
+Version: 0.1
+Date: 2014-02-06
+Author: Ramnath Vaidyanathan
+Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
+Description: This package allows R users to create interactive maps.
+License: MIT
+Imports:
+    plyr,
+    lattice,
+    RCurl,
+    RJSONIO,
+    whisker,
+    yaml,
+    RColorBrewer,
+    rCharts
+Collate:
+  Crosslet.R
+  Datamaps.R
+  Leaflet.R
+LazyData: true

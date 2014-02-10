@@ -1,0 +1,5 @@
+crosslet:
+  css: 
+    - styles.css
+    - "http://fonts.googleapis.com/css?family=Open+Sans"
+  jshead: "head.load.min.js"

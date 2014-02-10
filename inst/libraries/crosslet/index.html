@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Crosslet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+    <link rel="stylesheet" href="css/crosslet.css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+    <body>
+  <!--
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/">Crosslet</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                    
+<li class="active">
+  <a href="/" >Home</a>
+</li><li>
+  <a href="/about">About</a>
+
+</li>
+
+                 </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
+<div class="container">
+  <div class="row"><div class="span12">
+      <div id="map">
+      </div>
+    </div></div>
+<div class="row">
+<div class="span6">
+    <h1>Crosslet</h1>
+    
+<p><strong>Crosslet</strong> is a free small (22k without dependencies) JavaScript widget for interactive visualisation and analysis of geostatistical datasets. You can also use it for visualizing and comparing multivariate datasets.</p>
+
+<p>It is a combination of three very powerful JavaScript libraries:</p>
+
+<ul>
+<li>
+<a href="http://leafletjs.com/">Leaflet</a>, an elegant and beautiful mapping solution, and</li>
+<li>
+<a href="http://square.github.com/crossfilter/">Crossfilter</a>, a library for exploring large multivariate datasets in the browser.</li>
+<li>
+<a href="http://d3js.org/">D3</a>, a data driven way of manipulating objects.</li>
+</ul>
+<p>Crosslet also supports <a href="https://github.com/mbostock/topojson/">TopoJSON</a>, a GeoJSON extension that allows to present geometry in a highly compact way.</p>
+<p>Crosslet is written in <a href="http://coffeescript.org/">CoffeeScript</a> and uses <a href="http://lesscss.org/">less</a> for styling.</p>
+  
+<a href="https://github.com/sztanko/crosslet/blob/master/dist/crosslet-0.1.zip?raw=true" class="btn btn-primary btn-large" >Download crosslet-0.1.zip (44k js and css)</a>  
+    <!--<ul>
+      <li>
+        <a href="http://github.com/sztanko/crosslet">GitHub project</a>
+      </li>
+      <li>
+        <a href="./examples.html">Examples</a>
+      </li>
+      <li>
+        <a href="./tutorial" >Tutorial</a>
+      </li>
+      <li>
+        Version 0.1
+      </li>
+    </ul> -->
+  </div>
+  <div class="span6">
+      
+    
+<h2>Documentation &amp; Tutorials</h2>
+
+<ul>
+<li><a href="https://github.com/sztanko/crosslet/wiki">Introduction, download and installation instructions</a></li>
+<li><a href="https://github.com/sztanko/crosslet/wiki/Developer's-Reference">Developer's Reference</a></li>
+<li>Tutorials:
+<ul>
+  <li>TODO</li>
+  <!-- <li><a href="tutorials_world.html">Creating a simple world map.</a></li> -->
+</ul>
+</li>
+</ul>
+<h3>Examples</h3>
+<ul>
+  <li><a href="examples/us/">US election results per county</a></li>
+  <li><a href="examples/nhs/">GP patients satisfaction survey (England)</a> - 9000 areas, might be very slow in non webkit browsers.</li>
+  <li><a href="examples/census/">UK census 2011: religions in England and Wales</a></li>
+</ul>
+
+  
+<h3>Github</h3>
+<ul>
+  <li><a href="https://github.com/sztanko/crosslet/">Github page</a></li>
+  <li><a href="https://github.com/sztanko/crosslet/wiki">Wiki</a></li>
+<li><a href="https://github.com/sztanko/crosslet/tree/gh-pages">Source of this website and examples</a></li>
+</ul>
+
+  </div>
+</div>
+  
+    <div class="row">
+<div class="span6"><h2>Useful links</h2>
+<ul>
+  <li><a href="http://visual.ly/using-color-maps">Using Color in Maps</a>, by Visual.ly</li>
+  <li><a href="http://bost.ocks.org/mike/map/">Let's make a map</a>, from Mike Bostock</li>
+  <li><a href="http://bost.ocks.org/mike/leaflet/">D3 + Leaflet</a>, the basic concept behind Crosslet</li>
+  <li><a href="http://www.guardian.co.uk/science/blog/2012/jan/06/correlation-causation">Correlation is not causation</a>, Nathan Greens' article on the fact that <a href="http://en.wikipedia.org/wiki/Correlation_does_not_imply_causation">correlation does not imply causation</a>.</li>
+</ul></div>
+      <div class="span6">
+        <h2>Disclaimer</h2>
+        <p>Crosslet uses some latest web technologies including SVG, therefore it is not compatible with older browsers and browser which do not support SVG. Complex maps with more then a thousand items might cause Crosslet perform slower on non webkit based maps.</p>
+      </div>
+    </div>
+    
+  </div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.0.1/d3.v3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+<script type="text/javascript" src="js/crosslet.js"></script>
+<script type="text/javascript">
+var axisf=function(){ return function(d){return Math.round(d*10)/10+"%";}};
+var yearsf =function(){ return Math.round};
+
+var config = {
+  map: {
+    leaflet: {
+      key: "fe623ce312234f8f9333bbee72d4a176",
+      styleId: 64657
+    },
+    view: {
+      center: [35.0, 0.1],
+      zoom: 2
+    },
+    geo: {
+      url: "examples/world/data/world.topo.json",
+      name_field: "NAME",
+      id_field: "NAME",
+      topo_object: "world"
+    }
+  },
+  data: {
+    version: "1.0",
+    id_field: "country"
+  },
+  dimensions: {
+    corruption: {
+      title: "Corruption index",
+      data: {
+        colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
+        dataSet: "examples/world/data/data.tsv",
+        field: "corruption",
+
+      },
+      format: {
+        short: function() {return Math.round},
+        input: function() {return Math.round},
+
+      }
+      
+    },  
+    gdp: {
+      title: "GDP per capita, $",
+      data: {
+        colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
+        dataSet: "examples/world/data/data.tsv",
+        field: "gdp",
+        exponent:0.4,
+        ticks: [2000,10000,25000,50000,80000]
+
+      },
+      format: {
+        short: function(){return function(d) {return "$"+d3.format(",")(Math.round(d))}},
+
+        input: function(){return Math.round},
+        axis: function(){return function(d) {return "$"+Math.round(d/1000)+"k"}},
+
+      }
+    
+    },  
+    gini: {
+      title: "Gini coefficient",
+      data: {
+        //colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
+        dataSet: "examples/world/data/data.tsv",
+        field: "gini"
+      },
+    },
+    le: {
+      title: "Life expectancy, years",
+      data: {
+        colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
+        dataSet: "examples/world/data/data.tsv",
+        field: "life_expectancy",
+        exponent: 2.4
+      },
+      format:{
+        short: function(dd) { return function(d){return Math.round(d)+" years"}},
+        long: function(dd) { return function(d){return Math.round(d)+" years"}},
+        input: function() {return Math.round},
+        axis: function(dd) { return function(d){return Math.round(d)+"y"}},
+
+      }
+    },
+    democracy: {
+      title: "Democracy Index",
+      data: {
+        colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
+        dataSet: "examples/world/data/data.tsv",
+        field: "democracy_2011",
+      },
+    },  
+           
+  },
+  defaults: {
+    //colorscale: d3.scale.linear().domain([1, 10, 20]).range(["green", "yellow", "red"]).interpolate(d3.cie.interpolateLab),
+    opacity: 0.9,
+    order: ["corruption","gdp","le"],
+    active: "corruption"
+  },
+};
+
+console.log(config);
+cross = new crosslet.MapView($("#map"),config);
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37321587-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    </body>
+
+</html>
