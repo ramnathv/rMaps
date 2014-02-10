@@ -29,7 +29,7 @@ crosslet(
 )
 ```
 
-<img src='http://i.imgur.com/zQ6mixC.png?1' width=600px></img>
+<img src='http://i.imgur.com/zQ6mixC.png?1' width=100%></img>
 
 __Example 2: DataMaps__
 
@@ -41,7 +41,7 @@ ichoropleth(Crime ~ State, data = violent_crime, animate = "Year")
 ichoropleth(Crime ~ State, data = violent_crime, animate = "Year", play = TRUE)
 ```
 
-<img src='https://f.cloud.github.com/assets/346288/2117416/ab4aaaf6-90ca-11e3-8f3a-b03b8021737e.png' width=600px></img>
+<img src='https://f.cloud.github.com/assets/346288/2117416/ab4aaaf6-90ca-11e3-8f3a-b03b8021737e.png' width=100%></img>
 
 __Example 3: Leaflet__
 
@@ -56,7 +56,7 @@ map$marker(
 map
 ```
 
-<img src='http://i.imgur.com/zF4EDx2.png' width=600px></img>
+<img src='http://i.imgur.com/zF4EDx2.png' width=100%></img>
 
 
 
