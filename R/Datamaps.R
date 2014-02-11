@@ -6,7 +6,7 @@ Datamaps = setRefClass('Datamaps', contains = 'rCharts', methods = list(
   getPayload = function(chartId){
     params_ = params[!(names(params) %in% "popup_template")]
     list(
-      chartParams = toJSON(params_), 
+      chartParams = toJSON2(params_), 
       chartId = chartId, lib = basename(lib),
       popup_template = params$popup_template
     )
