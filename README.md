@@ -31,6 +31,8 @@ crosslet(
 
 <img src='http://i.imgur.com/zQ6mixC.png?1' width=100%></img>
 
+[Click to see Interactive Map](http://bl.ocks.org/ramnathv/raw/8970935/mymap.html)
+
 __Example 2: DataMaps__
 
 [DataMaps](http://datamaps.github.io) uses [D3.js](http://d3js.org) to create customizable SVG map visualizations in a single Javscript file. rMaps provides a simple wrapper around DataMaps and also extends its features using AngularJS.
