@@ -47,7 +47,8 @@ ichoropleth <- function(x, data, pal = "Blues", ncuts = 5, animate = NULL, play 
     fillKey = cut(
       fml$left, 
       quantile(fml$left, seq(0, 1, 1/ncuts)),
-      ordered_result = TRUE
+      ordered_result = TRUE,
+      include.lowest = TRUE
     )
   )
   fillColors = brewer.pal(ncuts, pal)
