@@ -46,7 +46,7 @@ ichoropleth <- function(x, data, pal = "Blues", ncuts = 5, animate = NULL, play 
   data = transform(data, 
     fillKey = cut(
       fml$left, 
-      quantile(fml$left, seq(0, 1, 1/ncuts)),
+      unique(quantile(fml$left, seq(0, 1, 1/ncuts))),
       ordered_result = TRUE
     )
   )
