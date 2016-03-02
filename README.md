@@ -4,10 +4,11 @@ rMaps is an R package to create, customize and publish interactive maps from R. 
 
 ## Installation
 
-You can install `rMaps` from github using the `devtools` package. You will also need to install the `dev` version of `rCharts`, that contains several experimental features, required by `rMaps`.
+You can install `rMaps` from github using the `devtools` package. You will also need to install `base64enc`, the `dev` version of `rCharts`, that contains several experimental features, required by `rMaps`.
 
 ```S
-require(devtools)
+require('base64enc')
+require('devtools')
 install_github('ramnathv/rCharts@dev')
 install_github('ramnathv/rMaps')
 ```
