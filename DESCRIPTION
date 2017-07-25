@@ -15,7 +15,8 @@ Imports:
     whisker,
     yaml,
     RColorBrewer,
-    rCharts
+    rCharts,
+    rjson
 Collate:
   Crosslet.R
   Datamaps.R
